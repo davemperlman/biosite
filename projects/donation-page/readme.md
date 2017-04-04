@@ -1,0 +1,1 @@
+# A simple one-page example site for a small business or entrepreneur. Easily navigated, this template makes it easy to convey a company or non-profit's mission statement without a burdening excess of design. Fully responsive design ensuring ease of use on all devices.

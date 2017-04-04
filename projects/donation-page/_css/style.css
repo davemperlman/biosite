@@ -1,0 +1,428 @@
+@keyframes music {
+  0% {
+    left: 50%;
+    top: 50%; }
+  100% {
+    transform: translate(100px, 170px);
+    width: 150px;
+    height: 150px; } }
+@keyframes photography {
+  0% {
+    left: 50%;
+    top: 50%; }
+  100% {
+    transform: translate(-100px, 170px);
+    width: 150px;
+    height: 150px; } }
+@keyframes dogs {
+  0% {
+    left: 50%;
+    top: 50%; }
+  100% {
+    transform: translate(150px, 0px);
+    width: 150px;
+    height: 150px; } }
+@keyframes webdev {
+  0% {
+    left: 50%;
+    top: 50%; }
+  100% {
+    transform: translate(-150px, 0px);
+    width: 150px;
+    height: 150px; } }
+@keyframes hiking {
+  0% {
+    left: 50%;
+    top: 50%; }
+  100% {
+    transform: translate(0px, -110px);
+    width: 150px;
+    height: 150px; } }
+@keyframes logo_anim {
+  25% {
+    transform: scaleX(0.9); }
+  50% {
+    transform: scaleX(1); }
+  75% {
+    transform: scaleX(0.9); }
+  100% {
+    transform: scaleX(1);
+    filter: hue-rotate(-35deg); } }
+@keyframes tablet {
+  100% {
+    height: 100%;
+    width: 100%;
+    max-height: 150px;
+    max-width: 150px; } }
+body {
+  width: 100%;
+  background-image: url("../img/mountainscape-wallpaper-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  min-height: 1040px; }
+
+.header-wrap {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+  overflow: hidden; }
+  .header-wrap #logo {
+    display: inline-block;
+    height: 100px;
+    position: relative; }
+    .header-wrap #logo h1 {
+      width: 150px;
+      position: absolute;
+      margin-left: 30px;
+      top: 10%;
+      cursor: pointer; }
+      .header-wrap #logo h1:hover {
+        animation: logo_anim .5s ease;
+        animation-fill-mode: forwards; }
+  .header-wrap nav {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .header-wrap nav ul {
+      float: right;
+      position: relative;
+      top: 25px; }
+      .header-wrap nav ul li {
+        display: inline-block;
+        width: 150px;
+        padding: 5px;
+        text-align: center; }
+        .header-wrap nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.35em;
+          width: 100%;
+          height: 100%;
+          display: block;
+          padding: 5px;
+          box-sizing: border-box; }
+          .header-wrap nav ul li a:hover {
+            background-color: #37579f; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto; }
+  .container #bio {
+    float: right;
+    width: 300px;
+    margin-top: 50px; }
+  .container #interests {
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    height: 500px; }
+    .container #interests li {
+      position: absolute;
+      left: 40%;
+      top: 25%;
+      background-color: #fff;
+      width: 0px;
+      height: 0px;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 100%;
+      transition: filter .5s ease; }
+    .container #interests #music {
+      animation: music 1s ease;
+      animation-fill-mode: forwards;
+      background-color: #000;
+      background-image: url("../img/music.jpg");
+      background-size: cover; }
+      .container #interests #music:hover {
+        transition: filter .5s ease;
+        filter: sepia(50%); }
+    .container #interests #photography {
+      animation: photography 1s ease;
+      animation-fill-mode: forwards;
+      background-color: #000;
+      background-image: url("../img/photography.jpg");
+      background-size: cover; }
+      .container #interests #photography:hover {
+        transition: filter .5s ease;
+        filter: sepia(50%); }
+    .container #interests #dogs {
+      animation: dogs 1.5s ease;
+      animation-fill-mode: forwards;
+      background-color: #000;
+      background-image: url("../img/dogs.jpg");
+      background-size: cover; }
+      .container #interests #dogs:hover {
+        transition: filter .5s ease;
+        filter: sepia(50%); }
+    .container #interests #webdev {
+      animation: webdev 2s ease;
+      animation-fill-mode: forwards;
+      background-color: #000;
+      background-image: url("../img/webdev.jpg");
+      background-size: cover; }
+      .container #interests #webdev:hover {
+        transition: filter .5s ease;
+        filter: sepia(50%); }
+    .container #interests #hiking {
+      animation: hiking 2.5s ease;
+      animation-fill-mode: forwards;
+      background-color: #000;
+      background-image: url("../img/hiking.jpg");
+      background-size: cover; }
+      .container #interests #hiking:hover {
+        transition: filter .5s ease;
+        filter: sepia(50%); }
+        .container #interests #hiking:hover .hidden {
+          display: block;
+          top: 40px;
+          color: #ff0000; }
+    .container #interests #hidden-fill {
+      display: none;
+      background-color: #000; }
+
+#container-end {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  clear: both;
+  position: relative; }
+  #container-end .display {
+    width: 50%;
+    position: absolute;
+    left: 7px;
+    clear: both;
+    border: 1px solid #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); }
+    #container-end .display:before, #container-end .display:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: ' ';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    #container-end .display:after {
+      border-color: transparent;
+      border-bottom-color: transparent;
+      border-width: 30px;
+      margin-left: -30px; }
+    #container-end .display:before {
+      border-color: transparent;
+      border-bottom-color: #dfdfdf;
+      border-width: 36px;
+      margin-left: -36px; }
+
+.active {
+  transition: filter .5s ease;
+  filter: sepia(50%); }
+
+.hidden {
+  display: none;
+  position: absolute; }
+
+.unhidden {
+  display: block; }
+
+.page-footer {
+  width: 100%;
+  background-color: #000;
+  opacity: .7;
+  position: relative;
+  bottom: 0;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto; }
+  .page-footer #paypal {
+    float: left;
+    width: 50%; }
+    .page-footer #paypal h3 {
+      text-align: center;
+      padding: 10px; }
+    .page-footer #paypal form {
+      margin: 0 auto;
+      margin-top: 20px; }
+      .page-footer #paypal form input {
+        width: 150px;
+        display: block;
+        margin: 0 auto; }
+  .page-footer #social {
+    width: 50%;
+    float: right; }
+    .page-footer #social ul {
+      margin-left: 20%; }
+    .page-footer #social li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 5px;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%; }
+      .page-footer #social li a {
+        position: absolute;
+        display: block;
+        height: 40px;
+        width: 40px;
+        top: 5%;
+        left: 10%; }
+        .page-footer #social li a:hover img {
+          filter: invert(100%); }
+        .page-footer #social li a img {
+          width: 40px;
+          filter: invert(50%);
+          vertical-align: middle; }
+
+#facebook {
+  position: relative;
+  top: 3px; }
+
+#youtube {
+  position: relative;
+  top: 2px; }
+
+#instagram {
+  position: relative;
+  top: 2px; }
+
+#linkedin {
+  position: relative;
+  top: 2px; }
+
+#mail {
+  position: relative;
+  top: 2px; }
+
+@media screen and (max-width: 910px) {
+  .container {
+    position: relative; }
+    .container #bio {
+      float: none;
+      max-width: 900px;
+      width: 90%;
+      margin: 0 auto; }
+    .container #interests {
+      float: none;
+      max-width: 100%; }
+    .container #container-end {
+      height: auto; }
+    .container #container-end .display {
+      margin: 0 auto;
+      left: 0px;
+      position: relative;
+      width: 100%;
+      transition: height .5s ease;
+      height: auto;
+      box-sizing: border-box; }
+      .container #container-end .display:before, .container #container-end .display:after {
+        border: none; }
+
+  .page-footer {
+    position: static;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    max-height: 500px; }
+    .page-footer #social {
+      width: 60%; }
+      .page-footer #social ul {
+        margin-left: 0%;
+        float: none; }
+    .page-footer #paypal {
+      width: 30%;
+      float: none;
+      display: inline-block; } }
+@media screen and (max-width: 676px) {
+  .container #interests {
+    float: none;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px; }
+    .container #interests ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      width: 90%;
+      margin: 0 auto; }
+      .container #interests ul li {
+        position: static;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        border-radius: 0px;
+        width: 32%;
+        max-width: 150px;
+        max-height: 150px;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 2px;
+        margin-bottom: 2px; }
+    .container #interests #music, .container #interests #dogs, .container #interests #hiking, .container #interests #webdev, .container #interests #photography, .container #interests #hidden-fill {
+      animation: none;
+      height: 150px;
+      display: flex; }
+
+  .container #container-end .display {
+    margin-top: 20px;
+    width: 98%;
+    margin: 20px auto; } }
+@media screen and (max-width: 640px) {
+  .header-wrap {
+    height: 100px; }
+    .header-wrap #logo {
+      height: 50px;
+      width: 100%; }
+      .header-wrap #logo h1 {
+        top: -15px;
+        position: relative; }
+    .header-wrap nav {
+      width: 100%;
+      display: inline-block; }
+      .header-wrap nav ul {
+        float: none;
+        display: flex;
+        justify-content: space-around;
+        clear: both;
+        padding: 0;
+        margin-top: 0;
+        top: 0; }
+        .header-wrap nav ul li {
+          width: 32%;
+          margin: 0 auto; }
+
+  .page-footer #social {
+    float: none;
+    width: 100%;
+    margin: 0 auto; }
+    .page-footer #social ul {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      .page-footer #social ul li {
+        margin-left: 1.5%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; }
+  .page-footer #paypal {
+    clear: both;
+    float: left;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

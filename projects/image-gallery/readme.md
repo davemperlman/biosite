@@ -1,0 +1,1 @@
+# A user-based image hosting app allowing a user to post photos with captions and store the information in a database on the server. 

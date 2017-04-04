@@ -1,0 +1,1 @@
+# A strictly CSS3-based project showing our solar system with planets rotating the sun proportionally to their actual rotation time. Being a big fan of astronomy, I thought this was a fun project as well as a good example of some CSS3 properties at work.

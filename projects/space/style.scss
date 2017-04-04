@@ -1,0 +1,281 @@
+@keyframes rotate {
+	0% {transform: rotate(-360deg);} 
+}
+
+@keyframes populate_info {
+	0% { left: -800px; }
+	50% { left: 200px;}
+	60% { left:100px; opacity: .8; background-color: #000; }
+	100% { box-shadow: inset 0 0 0 5px #448; }
+}
+
+body {
+	background-image: url("tileable-classic-nebula-space-patterns-6.jpg");
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #fff;
+	margin: 0 auto;
+}
+#planets {
+	margin: 0 auto;
+	top: -80px;
+	position: relative;
+	width: 700px;
+	float: right;
+}
+li {
+	position: absolute;
+	margin: 50% 50%;
+	list-style: none;
+	display: inline-block;
+	top: 0;
+	left: 0;
+
+}
+
+// li:hover {
+// 	border: 1px solid #884;
+// }
+
+#sun {
+	background: linear-gradient(to bottom right, #ff2, #f94);
+	width: 45px;
+	height: 45px;
+	border-radius: 25px;
+	vertical-align: 50px;
+	box-shadow: -1px -1px 25px 1px #ff2;
+	display: inline-block;
+}
+
+#mercury {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #ddd;
+	border-radius: 55px;
+	top: -13px;
+	left: -13px;
+	animation: rotate 1.2s linear infinite;
+	span {
+		width: 5px;
+		height: 5px;
+		background-color: #888;
+		display: inline-block;
+		border-radius: 10px;
+		position: relative;
+		left: 6px;
+		top: 0px;
+	}
+}
+
+#venus {
+	width: 110px;
+	height: 110px;
+	border: 1px solid #ddd;
+	border-radius: 110px;
+	top: -33px;
+	left: -33px;
+	animation: rotate 3.06s linear infinite;
+	span {
+		width: 8px;
+		height: 8px;
+		background-color: #a74;
+		display: inline-block;
+		border-radius: 10px;
+		position: relative;
+		left: 18px;
+		top: 0px;
+	}
+}
+
+#earth {
+	width: 145px;
+	height: 145px;
+	border: 1px solid #ddd;
+	border-radius: 200px;
+	top: -51px;
+	left: -51px;
+	animation: rotate 5s linear infinite;
+	span {
+		width: 8px;
+		height: 8px;
+		background: linear-gradient(to right, #449, #494);
+		display: inline-block;
+		border-radius: 10px;
+		position: relative;
+		left: 30px;
+		top: 0px;
+	}
+}
+
+#mars {
+	width: 220px;
+	height: 220px;
+	border: 1px solid #ddd;
+	border-radius: 200px;
+	top: -87px;
+	left: -87px;
+	animation: rotate 9.39s linear infinite;
+	span {
+		width: 8px;
+		height: 8px;
+		background: linear-gradient(to right, #877, #644);
+		display: inline-block;
+		border-radius: 10px;
+		position: relative;
+		left: 60px;
+		top: 0px;
+	}
+}
+
+#jupiter {
+	width: 345px;
+	height: 345px;
+	border: 1px solid #ddd;
+	border-radius: 400px;
+	top: -146px;
+	left: -146px;
+	animation: rotate 59.34s linear infinite;
+	span {
+		width: 12px;
+		height: 12px;
+		background: linear-gradient(to right, #877, #644, #877, #644, #877);
+		display: inline-block;
+		border-radius: 20px;
+		position: relative;
+		left: 110px;
+		top: 0px;
+	}
+}
+
+#saturn {
+	width: 420px;
+	height: 420px;
+	border: 1px solid #ddd;
+	border-radius: 400px;
+	top: -181px;
+	left: -181px;
+	animation: rotate 147.39s linear infinite;
+	#the-saturn {
+		width: 10px;
+		height: 10px;
+		background: #884;
+		display: inline-block;
+		border-radius: 20px;
+		position: relative;
+		left: 155px;
+		top: 0px;
+		#ring {
+			position: relative;
+			width: 10px;
+			height: 10px;
+			border: 3px solid #866;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;
+			display: inline-block;
+			top: -3px;
+			left: -4px;
+		}
+	}
+}
+
+#uranus {
+	width: 495px;
+	height: 495px;
+	border: 1px solid #ddd;
+	border-radius: 900px;
+	top: -217px;
+	left: -217px;
+	animation: rotate 420.54s linear infinite;
+	span {
+		width: 10px;
+		height: 10px;
+		background: linear-gradient(to right, #8a8, #88a,  #8a7);
+		display: inline-block;
+		border-radius: 20px;
+		position: relative;
+		left: 175px;
+		top: 0px;
+	}
+}
+
+#neptune {
+	width: 545px;
+	height: 545px;
+	border: 1px solid #ddd;
+	border-radius: 900px;
+	top: -241px;
+	left: -241px;
+	animation: rotate 824.65s linear infinite;
+	span {
+		width: 10px;
+		height: 10px;
+		background: linear-gradient(to right, #88b, #88a,  #88b);
+		display: inline-block;
+		border-radius: 20px;
+		position: relative;
+		left: 195px;
+		top: 0px;
+	}
+}
+
+#pluto {
+	width: 595px;
+	height: 595px;
+	border: 1px solid #ddd;
+	border-radius: 900px;
+	top: -266px;
+	left: -266px;
+	animation: rotate 1241.09s linear infinite;
+	span {
+		width: 5px;
+		height: 5px;
+		background: linear-gradient(to right, #88b, #88a,  #88b);
+		display: inline-block;
+		border-radius: 20px;
+		position: relative;
+		left: 210px;
+		top: 0px;
+	}
+}
+
+#info {
+	li {
+		position: static;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: 0 auto;
+		display: block;
+		color: #fff;
+		&:hover {
+			cursor: pointer;
+			.hidden {
+				animation: populate_info 1s ease;
+				animation-fill-mode: forwards;
+				display: block;
+				position: absolute;
+				left: 100px;
+				top: 50%;
+				width: 300px;
+			}
+		}
+		.hidden {
+			display: none;
+			padding: 20px;
+			box-sizing: border-box;
+			border-radius: 10px;
+			border: 1px solid #448;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+}

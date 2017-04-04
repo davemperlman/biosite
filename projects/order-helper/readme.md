@@ -1,0 +1,1 @@
+# A project I completed to help a restaurant predict how much of a specific inventory item it needs to order on a given day. A PHP and MySql driven project to dynamically generate and manipulate data stored in a database and then display it for easy readability.
